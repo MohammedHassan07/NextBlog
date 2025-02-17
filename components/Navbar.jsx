@@ -33,7 +33,9 @@ const Navbar = () => {
             Contact
           </Link>
           <div className='flex items-center'>
-            <Button className="mx-1" variant="outline">Admin</Button>
+            <Link href={'/admin/register'}>
+              <Button className="mx-1 text-xs" variant="outline">Admin</Button>
+            </Link>
             <ModeToggle />
           </div>
         </div>
@@ -64,10 +66,11 @@ const Navbar = () => {
                     <Link href="/contact">
                       Contact
                     </Link>
-                    <div>
-                      <Button className="mx-1 text-xs" variant="outline">Admin</Button>
 
-                    </div>
+                    <Link href={'/admin'}>
+                      <Button className="mx-1 text-xs" variant="outline">Admin</Button>
+                    </Link>
+
 
                   </div>
                 </SheetDescription>
